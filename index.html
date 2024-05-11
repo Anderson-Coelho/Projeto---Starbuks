@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap" rel="stylesheet">
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <div class="circulo"></div> <!-- comentário -->
+    <!--trocar a cor do circulo verde -->
+    
+    <img src="./imagens/logo.png" class="logo">
+
+    <div class="conteudo">
+
+        <div class="caixa-texto">
+            <h2>It's not just Coffee <br>
+                It's <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi possimus nobis suscipit velit fugit unde
+                excepturi, reprehenderit officiis molestiae voluptatem corporis! Vel doloribus sed dolores beatae
+                quisquam,
+                suscipit odio repellat.oren </p>
+            <button>Learn more</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./imagens/img1.png" class="starbucks">
+        </div>
+
+    </div>
+
+    <div class="menu">
+        <img src="./imagens/thumb1.png" class="botao-menu" onclick="trocaImagem('./imagens/img1.png'); trocaCor('#017143')">
+        <img src="./imagens/thumb2.png" class="botao-menu" onclick="trocaImagem('./imagens/img2.png'); trocaCor('#eb7495')">
+        <img src="./imagens/thumb3.png" class="botao-menu" onclick="trocaImagem('./imagens/img3.png'); trocaCor('#d752b1')">
+
+    </div>
+
+</body>
+
+<!-- o Java Script JS pode ser criado de duas maneira
+ Primeira maneira pode ser criado direto dentro do html5
+ Segunda maneira criar o JS fora da html5 entranto não pode esquecer de referenciar conforme esta abaixo -->
+<script src="./scripts.js"></script>
+
+</html>

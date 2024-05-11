@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    /*overflow: hidden;  */
+}
+
+.conteudo {
+    width: 100%;
+    /* width é a largura*/
+    display: flex;
+    /* permite que alteremos o alinhamento/posição dos itens/elementos na tela*/
+    justify-content: space-between;
+    /* permite justificar os componentes ou seja alinhar */
+    align-items: center;
+    /* permite alinhar os itens/componentes na vertical da tela*/
+}
+
+.caixa-texto {
+    width: 600px;
+}
+
+.caixa-imagem {
+    width: 600px;
+    /* width é a largura*/
+    display: flex;
+    /* permite que alteremos o alinhamento/posição dos itens/elementos na tela*/
+    justify-content: flex-end;
+    /* permite justificar os componentes no final da tela a direita*/
+    margin-top: 250px;
+    /* para imagem descer      margin-top: 250px*/
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    left: 450px;
+    bottom: 0px;
+    /* permite que alteremos o alinhamento/posição dos itens/elementos na tela */
+    /* permite justificar os componentes no centro da tela  justify-content: center; */
+
+}
+
+h2 {
+    color: #333;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 15px;
+}
+
+button {
+    background: #017143;
+    /* background -> fundo do elemento*/
+    color: white;
+    /* cor do texto */
+    border-radius: 40px;
+    /* arredondamento da borda do botão */
+    border: none;
+    /* borda do elemento */
+    cursor: pointer;
+    /* cursor do mouse troca de ponteiro para maozinha*/
+    padding: 10px;
+    /* espaçamento interno dentro do botão*/
+    margin-top: 20px;
+    /* */
+}
+
+.logo {
+    width: 80px;
+}
+
+.starbucks {
+    width: 340px;   /*340*/
+    }
+
+.botao-menu {
+    width: 60px;
+    transition: 1s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.botao-menu:hover {
+    /* hover é um evento do botão que todas as vezes 
+    que passo o mouse em cima da imagem ela se move */
+    transform: translateY(-25px);
+    /* Com o comando transform: translateY eu consigo mover as figuras do menu no eixo vertical y
+       Se caso eu colocar o sinal de + no ligar do sina - a fugura ao invés de subuir ela vai descer*/
+}
+
+.circulo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
